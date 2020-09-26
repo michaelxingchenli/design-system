@@ -1,0 +1,60 @@
+.line {
+  height: 1px;
+  width: 100%;
+  background: #d6d6d8;
+  margin: 80px 0;
+}
+
+.grid-display {
+  margin: 20px 0;
+}
+
+.grid-display [class^="col"] {
+  background: #e0e0e0;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.grid-display [class^="col"] p {
+  color: #333333;
+  font-size: 0.8rem;
+}
+
+pre {
+  margin-top: 30px;
+  overflow: auto;
+  background: #fff;
+  border-radius: 4px;
+  border: 1px solid #d8dce6;
+  padding: 24px 0;
+}
+
+code,
+.tag,
+.el,
+.name,
+.content,
+.comment {
+  font-family: monospace;
+  font-size: 1.1rem;
+  line-height: 1.2rem;
+  color: #636366;
+}
+
+.el {
+  color: #fe7880;
+}
+
+.name {
+  color: #f9b42d;
+}
+
+.content {
+  color: #75c050;
+}
+
+.comment {
+  color: #b6cad2;
+}

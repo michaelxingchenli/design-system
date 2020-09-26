@@ -1,51 +1,49 @@
 import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  NavLink,
+} from "react-router-dom";
+
+import ButtonComponent from "./pages/ButtonComponent";
+import GridComponent from "./pages/GridComponent";
+
 import "./App.css";
-import Button from "./Button.js";
 
 function App() {
   return (
-    <>
-      <div className="App">Buttons</div>
+    <div className="app">
+      <header className="app__header">
+        <h1>
+          <span className="primary">SF</span> design system
+        </h1>
+      </header>
 
-      <div>
-        &lt;Button /&gt;
-        <Button>Default</Button>
+      <div className="app__container">
+        <Router>
+          <div className="app__leftNav">
+            <NavLink to="/colors">Colors</NavLink>
+            <NavLink to="/typography">Typography</NavLink>
+            <NavLink to="/spaces">Spaces</NavLink>
+            <NavLink to="/buttons">Buttons</NavLink>
+            <NavLink to="/inputs">Inputs</NavLink>
+            <NavLink to="/grid">Grid</NavLink>
+          </div>
+          <div className="app__main">
+            <Switch>
+              <Route path="/buttons">
+                <ButtonComponent />
+              </Route>
+              <Route path="/grid">
+                <GridComponent />
+              </Route>
+              <Route path="/"></Route>
+            </Switch>
+          </div>
+        </Router>
       </div>
-
-      <div>
-        &:hover, &:focus
-        <Button className="hover">Default</Button>
-      </div>
-
-      <div>
-        &lt;Button variant=&quot;outline&quot; /&gt;
-        <Button variant="outline">Default</Button>
-      </div>
-
-      <div>
-        &:hover, &:focus
-        <Button className="hover" variant="outline">
-          Default
-        </Button>
-      </div>
-
-      <div>
-        &lt;Button variant=&quot;text&quot; /&gt;
-        <Button variant="text">Default</Button>
-      </div>
-
-      <div>
-        &:hover, &:focus
-        <Button className="hover" variant="text">
-          Default
-        </Button>
-      </div>
-
-      <div>
-        &lt;Button disableShadow; /&gt;
-        <Button disableShadow>Default</Button>
-      </div>
-    </>
+    </div>
   );
 }
 
