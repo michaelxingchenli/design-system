@@ -1,0 +1,48 @@
+.button__default {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+  background-color: #e0e0e0;
+  font-size: 14px;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  color: #3f3f3f;
+  box-shadow: 0 2px 3px 0 #3333332b;
+}
+
+.button__default.hover,
+.button__default:hover,
+.button__default:focus {
+  color: #3f3f3f;
+  background-color: #aeaeae;
+}
+
+.button__default.outline {
+  border: 1px solid #3d5afe;
+  color: #3d5afe;
+  background-color: white;
+}
+
+.button__default.outline.hover,
+.button__default.outline:hover,
+.button__default.outline:focus {
+  background-color: rgba(41, 98, 255, 0.1);
+}
+
+.button__default.text {
+  box-shadow: none;
+  color: #3d5afe;
+  background-color: white;
+}
+
+.button__default.text.hover,
+.button__default.text:hover,
+.button__default.text:focus {
+  background-color: rgba(41, 98, 255, 0.1);
+}
+
+.button__default.disableShadow {
+  box-shadow: none;
+  background-color: #3d5afe;
+  color: white;
+}
