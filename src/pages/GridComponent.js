@@ -1,10 +1,12 @@
 import React from "react";
 import "./GridComponent.css";
-import "../style/grid.css";
+import "../style/grid.scss";
 
 function GridComponnet(props) {
   return (
     <>
+      <h2>Grid</h2>
+
       <div className="grid-display">
         <div className="row">
           <div className="col-1">

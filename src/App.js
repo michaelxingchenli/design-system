@@ -8,15 +8,19 @@ import {
 
 import ButtonComponent from "./pages/ButtonComponent";
 import GridComponent from "./pages/GridComponent";
+import TypographyComponent from "./pages/TypographyComponent";
+import ColorComponent from "./pages/ColorComponent";
 
-import "./App.css";
+import "./App.scss";
 
 function App() {
   return (
     <div className="app">
       <header className="app__header">
         <h1>
-          <span className="primary">SF</span> design system
+          <a href="/">
+            <span className="primary">SF</span> design system
+          </a>
         </h1>
       </header>
 
@@ -25,20 +29,27 @@ function App() {
           <div className="app__leftNav">
             <NavLink to="/colors">Colors</NavLink>
             <NavLink to="/typography">Typography</NavLink>
-            <NavLink to="/spaces">Spaces</NavLink>
             <NavLink to="/buttons">Buttons</NavLink>
             <NavLink to="/inputs">Inputs</NavLink>
             <NavLink to="/grid">Grid</NavLink>
           </div>
           <div className="app__main">
             <Switch>
+              <Route path="/colors">
+                <ColorComponent />
+              </Route>
+              <Route path="/typography">
+                <TypographyComponent />
+              </Route>
               <Route path="/buttons">
                 <ButtonComponent />
               </Route>
               <Route path="/grid">
                 <GridComponent />
               </Route>
-              <Route path="/"></Route>
+              <Route path="/">
+                <h2>Welcome to SF design system (react)</h2>
+              </Route>
             </Switch>
           </div>
         </Router>

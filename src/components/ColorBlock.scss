@@ -1,0 +1,60 @@
+@import "../style/variables.scss";
+@import "../style/mixin.scss";
+
+.colorBlock {
+  display: inline-block;
+  width: 160px;
+  height: 40px;
+  margin: 20px;
+  line-height: 35px;
+  text-align: center;
+
+  &.primary {
+    background-color: $primary;
+    @include text-contrast($primary);
+  }
+
+  &.primaryHover {
+    background-color: $primaryHover;
+    @include text-contrast($primaryHover);
+  }
+
+  &.secondary {
+    background-color: $secondary;
+    @include text-contrast($secondary);
+  }
+
+  &.secondaryHover {
+    background-color: $secondaryHover;
+    @include text-contrast($secondaryHover);
+  }
+
+  &.grey1 {
+    background-color: $grey1;
+    @include text-contrast($grey1);
+  }
+  &.grey2 {
+    background-color: $grey2;
+    @include text-contrast($grey2);
+  }
+  &.grey3 {
+    background-color: $grey3;
+    @include text-contrast($grey3);
+  }
+  &.grey4 {
+    background-color: $grey4;
+    @include text-contrast($grey4);
+  }
+  &.success {
+    background-color: $success;
+    @include text-contrast($success);
+  }
+  &.warning {
+    background-color: $warning;
+    @include text-contrast($warning);
+  }
+  &.danger {
+    background-color: $danger;
+    @include text-contrast($danger);
+  }
+}

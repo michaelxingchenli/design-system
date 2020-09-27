@@ -4,7 +4,7 @@ import Button from "../components/Button";
 const ButtonComponent = () => {
   return (
     <>
-      <h1 className="buttonsComponent">Buttons</h1>
+      <h2>Buttons</h2>
 
       <div className="row">
         <div className="col-6">
