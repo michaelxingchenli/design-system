@@ -6,10 +6,12 @@ import {
   NavLink,
 } from "react-router-dom";
 
+import Home from "./pages/Home";
 import ButtonComponent from "./pages/ButtonComponent";
 import GridComponent from "./pages/GridComponent";
 import TypographyComponent from "./pages/TypographyComponent";
 import ColorComponent from "./pages/ColorComponent";
+import InputComponent from "./pages/InputComponent";
 
 import "./App.scss";
 
@@ -47,8 +49,11 @@ function App() {
               <Route path="/grid">
                 <GridComponent />
               </Route>
+              <Route path="/inputs">
+                <InputComponent />
+              </Route>
               <Route path="/">
-                <h2>Welcome to SF design system (react)</h2>
+                <Home />
               </Route>
             </Switch>
           </div>

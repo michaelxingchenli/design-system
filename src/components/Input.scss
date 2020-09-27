@@ -1,0 +1,54 @@
+@import "../style/variables.scss";
+
+.sl-label {
+  font-size: 0.8rem;
+  color: $grey1;
+}
+
+.sl-input {
+  display: block;
+  border-radius: 6px;
+  padding: 10px;
+  border: 1px solid $grey3;
+  font-size: 16px;
+
+  &:hover {
+    border: 1px solid $grey1;
+  }
+
+  &:focus {
+    border: 1px solid $primary;
+    outline: none;
+  }
+
+  &.success {
+    border-color: $success;
+
+    &:focus {
+      border-color: $success;
+    }
+  }
+
+  &.error {
+    border-color: $danger;
+    &:focus {
+      border-color: $danger;
+    }
+  }
+
+  &.warning {
+    border-color: $warning;
+    &:focus {
+      border-color: $warning;
+    }
+  }
+
+  &:disabled {
+    background-color: $grey4;
+    cursor: not-allowed;
+
+    &:hover {
+      border-color: $grey3;
+    }
+  }
+}
