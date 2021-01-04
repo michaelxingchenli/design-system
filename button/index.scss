@@ -1,0 +1,118 @@
+@import "../style/variables.scss";
+
+.sf-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+  background-color: $grey4;
+  font-size: 14px;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  color: #3f3f3f;
+  box-shadow: 0 2px 3px 0 #3333332b;
+  cursor: pointer;
+}
+
+.sf-button i {
+  font-size: 14px;
+  color: inherit;
+}
+
+.sf-button .startIcon {
+  margin-right: 5px;
+}
+.sf-button .endIcon {
+  margin-left: 5px;
+}
+
+.sf-button.hover,
+.sf-button:hover,
+.sf-button:focus {
+  color: #3f3f3f;
+  background-color: $grey3;
+}
+
+.sf-button.outline {
+  border: 1px solid $primary;
+  color: $primary;
+  background-color: white;
+}
+
+.sf-button.outline.hover,
+.sf-button.outline:hover,
+.sf-button.outline:focus {
+  background-color: rgba(41, 98, 255, 0.1);
+}
+
+.sf-button.text {
+  box-shadow: none;
+  color: $primary;
+  background-color: white;
+}
+
+.sf-button.text.hover,
+.sf-button.text:hover,
+.sf-button.text:focus {
+  background-color: rgba(41, 98, 255, 0.1);
+}
+
+.sf-button.disableShadow {
+  box-shadow: none;
+  background-color: $primary;
+  color: white;
+}
+
+.sf-button.disableShadow.hover,
+.sf-button.disableShadow:hover,
+.sf-button.disableShadow:focus {
+  background-color: $primaryHover;
+}
+
+.sf-button:disabled {
+  background-color: $grey4;
+  color: $grey2;
+  cursor: not-allowed;
+}
+
+.sf-button.text:disabled {
+  background-color: transparent;
+}
+
+.sf-button.sm {
+  padding: 6px 16px;
+}
+
+.sf-button.md {
+  padding: 10px 18px;
+}
+
+.sf-button.lg {
+  padding: 13px 24px;
+}
+
+.sf-button.primary {
+  color: white;
+  background-color: $primary;
+}
+
+.sf-button.primary.hover,
+.sf-button.primary:hover,
+.sf-button.primary:focus {
+  color: white;
+  background-color: $primary;
+}
+
+.sf-button.secondary {
+  color: white;
+  background-color: $secondary;
+}
+
+.sf-button.secondary.hover,
+.sf-button.secondary:hover,
+.sf-button.secondary:focus {
+  color: white;
+  background-color: $secondaryHover;
+}
